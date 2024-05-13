@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class removevowel {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the string ");
+      String str= sc.nextLine();
+      String result= " ";
+      for (int i = 0; i < str.length(); i++) {
+        char ch = str.charAt(i);
+        if (ch == 'a' || ch == 'o' || ch == 'i'|| ch == 'e' || ch == 'u') {
+            continue;
+    }else{
+       result+= str.charAt(i);
+      }
+}
+System.out.println("now the result "+result);
+}
+}
